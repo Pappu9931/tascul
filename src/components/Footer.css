@@ -1,0 +1,48 @@
+/* src/components/Footer.css */
+
+.footer {
+  background: linear-gradient(
+    135deg,
+    #1a2a6c,
+    #1d0101,
+    #7d5705
+  ); /* Gradient background */
+  color: #ffffff; /* White text */
+  padding: 2rem 0; /* Vertical padding */
+  text-align: center; /* Center text */
+  position: relative; /* Position relative for any child positioning */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.footer-content {
+  max-width: 1200px; /* Limit width for larger screens */
+  margin: 0 auto; /* Center the content */
+  padding: 0 1rem; /* Horizontal padding for smaller screens */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Font size for the paragraph */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+.social-links {
+  margin-top: 1rem; /* Space between text and social links */
+  display: flex; /* Use flex for alignment */
+  justify-content: center; /* Center align icons */
+}
+
+.social-links a {
+  color: #ffffff; /* White color for links */
+  margin: 0 1rem; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Size of the icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition */
+}
+
+.social-links a:hover {
+  color: #e0f7fa; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

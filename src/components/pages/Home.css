@@ -1,0 +1,136 @@
+/* src/styles/Home.css */
+
+.home-header h1 {
+  color: #fdbb2d;
+  text-shadow: 2px 2px 10px rgba(253, 187, 45, 0.5);
+}
+
+.home {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #242c4b, #1d0101, #000000);
+  color: #ffffff;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-header p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #e0e4f1; /* Light text to match dark background */
+}
+
+.cta-button {
+  background-color: #fdbb2d;
+  color: #1a2a6c;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a726;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Feature Cards */
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #252c48;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-card h3 {
+  color: #fdbb2d;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #b0b4c2; /* Soft text color */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* src/styles/Home.css */
+
+.faq-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #fdbb2d;
+  margin-bottom: 1.5rem;
+}
+
+.faq-card {
+  background-color: #1a1f2e; /* Dark background for each FAQ card */
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, max-height 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-card.open {
+  background-color: #292f45; /* Slightly lighter background when expanded */
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  color: #fdbb2d;
+  margin: 0;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b4c2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer.show {
+  max-height: 200px; /* Allow enough height for expanded answer */
+  margin-top: 0.5rem;
+}
